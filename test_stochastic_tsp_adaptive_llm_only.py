@@ -3,7 +3,12 @@ import time
 
 from dotenv import load_dotenv
 
-from rlm.clients import get_client
+from benchmark_backend import (
+    get_benchmark_client,
+    load_benchmark_backend,
+    print_client_usage,
+    wait_for_benchmark_cooldown,
+)
 
 load_dotenv()
 
@@ -23,13 +28,12 @@ Question:
 Derive the optimal adaptive policy — a complete decision tree of the form "at city X, having visited set S, with multiplier m, go to city Y" — that minimizes expected total cost. Then compute the exact expected cost of this optimal policy.
 """
 
-backend_kwargs = {
-    "api_key": os.environ["GEMINI_API_KEY"],
-    "model_name": "gemini-2.5-flash",
-}
+backend_config = load_benchmark_backend(
+    default_gemini_model="gemini-2.5-flash",
+    default_vllm_model="Qwen/Qwen2.5-7B-Instruct",
+)
 
-print("Waiting 15 seconds for rate limit to cool down...")
-time.sleep(15)
+wait_for_benchmark_cooldown(backend_config)
 
 print("\n" + "=" * 70)
 print("PROMPT")
@@ -39,8 +43,10 @@ print(prompt)
 print("\n" + "=" * 70)
 print("BASELINE LLM")
 print("=" * 70)
+print(f"Backend: {backend_config.backend}")
+print(f"Model:   {backend_config.model_name}")
 
-client = get_client("gemini", backend_kwargs.copy())
+client = get_benchmark_client(backend_config)
 wall_start = time.perf_counter()
 response = client.completion(prompt)
 wall_end = time.perf_counter()
@@ -48,11 +54,4 @@ wall_end = time.perf_counter()
 print(response)
 print("\n" + "-" * 40)
 print(f"Baseline wall time: {wall_end - wall_start:.3f}s")
-
-usage = client.get_usage_summary().to_dict()
-for model_name, model_usage in usage.get("model_usage_summaries", {}).items():
-    print(
-        f"{model_name}: input={model_usage.get('total_input_tokens', 0):,}, "
-        f"output={model_usage.get('total_output_tokens', 0):,}, "
-        f"calls={model_usage.get('total_calls', 0)}"
-    )
+print_client_usage(client)

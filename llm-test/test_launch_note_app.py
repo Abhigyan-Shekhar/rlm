@@ -1,17 +1,21 @@
-import os
+import sys
 import time
+from pathlib import Path
 
-import google.generativeai as genai
 from dotenv import load_dotenv
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from benchmark_backend import (
+    build_messages,
+    get_benchmark_client,
+    load_benchmark_backend,
+    print_client_usage,
+    wait_for_benchmark_cooldown,
+)
 
 load_dotenv()
 
-# Configure Gemini
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-
-MODEL_NAME = "gemini-2.5-flash-lite"
-
-# Prompt content
 context = """
 Goal: Launch a new AI-powered note-taking app in 30 days.
 
@@ -52,68 +56,40 @@ Return a structured plan with:
 Do NOT use llm_query. Analyze the context variable directly with Python code.
 """
 
-# Run inference
-model = genai.GenerativeModel(
-    model_name=MODEL_NAME,
-    system_instruction=(
-        "You are a helpful planning assistant. "
-        "Always respond in plain text only. "
-        "Do NOT use JSON, markdown code blocks, or any structured data format. "
-        "Use plain prose, bullet points, and numbered lists where appropriate."
-    ),
+system_instruction = (
+    "You are a helpful planning assistant. "
+    "Always respond in plain text only. "
+    "Do NOT use JSON, markdown code blocks, or any structured data format. "
+    "Use plain prose, bullet points, and numbered lists where appropriate."
 )
+
+backend_config = load_benchmark_backend(
+    default_gemini_model="gemini-2.5-flash-lite",
+    default_vllm_model="Qwen/Qwen2.5-7B-Instruct",
+)
+
+wait_for_benchmark_cooldown(backend_config)
+
+client = get_benchmark_client(backend_config)
 
 wall_start = time.perf_counter()
-llm_start = time.perf_counter()
-
-response = model.generate_content(
-    prompt,
-    generation_config=genai.types.GenerationConfig(
-        temperature=0,
-        max_output_tokens=2048,
-    ),
-)
-
-llm_end = time.perf_counter()
+response = client.completion(build_messages(prompt, system_instruction))
 wall_end = time.perf_counter()
 
-llm_time = llm_end - llm_start
-wall_time = wall_end - wall_start
-
-# Print results
 print("\n" + "=" * 70)
 print("ANSWER")
 print("=" * 70)
-print(response.text)
+print(f"Backend: {backend_config.backend}")
+print(f"Model:   {backend_config.model_name}")
+print(response)
 
 print("\n" + "=" * 70)
 print("LATENCY BREAKDOWN")
 print("=" * 70)
-print(f"  Total wall time:    {wall_time:.3f}s")
-print(f"  LLM call time:      {llm_time:.3f}s")
-print(f"  Overhead:           {wall_time - llm_time:.3f}s")
+print(f"  Total wall time:    {wall_end - wall_start:.3f}s")
 
-# Token usage
 print("\n" + "=" * 70)
 print("TOKEN USAGE")
 print("=" * 70)
-
-usage = response.usage_metadata
-input_tokens = usage.prompt_token_count
-output_tokens = usage.candidates_token_count
-total_tokens = usage.total_token_count
-
-print(f"  Model:             {MODEL_NAME}")
-print(f"  Input tokens:      {input_tokens:,}")
-print(f"  Output tokens:     {output_tokens:,}")
-print(f"  Total tokens:      {total_tokens:,}")
-
-if output_tokens and llm_time > 0:
-    print(f"\n  {'─' * 40}")
-    print("  THROUGHPUT")
-    print(f"  {'─' * 40}")
-    print(f"  Output tokens/sec:   {output_tokens / llm_time:.1f} tok/s")
-    print(f"  ms per output token: {(llm_time / output_tokens) * 1000:.1f} ms/tok")
-    print(f"  Total tokens/sec:    {total_tokens / llm_time:.1f} tok/s")
-
+print_client_usage(client)
 print("=" * 70)

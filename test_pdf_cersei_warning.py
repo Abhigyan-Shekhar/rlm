@@ -3,6 +3,7 @@ import time
 
 from dotenv import load_dotenv
 
+from benchmark_backend import load_benchmark_backend, wait_for_benchmark_cooldown
 from rlm import RLM
 from rlm.logger import RLMLogger
 
@@ -32,17 +33,18 @@ Required output procedure:
 
 Return only the exact quotation from the text and nothing else."""
 
-print("Waiting 15 seconds for rate limit to cool down...")
-time.sleep(15)
+backend_config = load_benchmark_backend(
+    default_gemini_model="gemini-2.5-flash-lite",
+    default_vllm_model="Qwen/Qwen2.5-7B-Instruct",
+)
+
+wait_for_benchmark_cooldown(backend_config)
 
 logger = RLMLogger()
 
 agent = RLM(
-    backend="gemini",
-    backend_kwargs={
-        "api_key": os.environ["GEMINI_API_KEY"],
-        "model_name": "gemini-2.5-flash-lite",
-    },
+    backend=backend_config.backend,
+    backend_kwargs=backend_config.backend_kwargs.copy(),
     environment="local",
     environment_kwargs={"disable_plain_lm_queries": True},
     max_depth=3,
@@ -59,6 +61,8 @@ wall_end = time.perf_counter()
 print("\n" + "=" * 70)
 print("ANSWER")
 print("=" * 70)
+print(f"Backend: {backend_config.backend}")
+print(f"Model:   {backend_config.model_name}")
 print(result.response)
 
 print("\n" + "=" * 70)

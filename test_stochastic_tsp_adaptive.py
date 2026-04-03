@@ -3,8 +3,13 @@ import time
 
 from dotenv import load_dotenv
 
+from benchmark_backend import (
+    get_benchmark_client,
+    load_benchmark_backend,
+    print_client_usage,
+    wait_for_benchmark_cooldown,
+)
 from rlm import RLM
-from rlm.clients import get_client
 from rlm.logger import RLMLogger
 
 load_dotenv()
@@ -25,13 +30,12 @@ Question:
 Derive the optimal adaptive policy — a complete decision tree of the form "at city X, having visited set S, with multiplier m, go to city Y" — that minimizes expected total cost. Then compute the exact expected cost of this optimal policy.
 """
 
-print("Waiting 15 seconds for rate limit to cool down...")
-time.sleep(15)
+backend_config = load_benchmark_backend(
+    default_gemini_model="gemini-2.5-flash",
+    default_vllm_model="Qwen/Qwen2.5-7B-Instruct",
+)
 
-backend_kwargs = {
-    "api_key": os.environ["GEMINI_API_KEY"],
-    "model_name": "gemini-2.5-flash",
-}
+wait_for_benchmark_cooldown(backend_config)
 
 print("\n" + "=" * 70)
 print("PROMPT")
@@ -41,8 +45,10 @@ print(prompt)
 print("\n" + "=" * 70)
 print("BASELINE LLM")
 print("=" * 70)
+print(f"Backend: {backend_config.backend}")
+print(f"Model:   {backend_config.model_name}")
 
-baseline_client = get_client("gemini", backend_kwargs.copy())
+baseline_client = get_benchmark_client(backend_config)
 llm_start = time.perf_counter()
 llm_response = baseline_client.completion(prompt)
 llm_end = time.perf_counter()
@@ -50,14 +56,7 @@ llm_end = time.perf_counter()
 print(llm_response)
 print("\n" + "-" * 40)
 print(f"Baseline wall time: {llm_end - llm_start:.3f}s")
-
-llm_usage = baseline_client.get_usage_summary().to_dict()
-for model_name, model_usage in llm_usage.get("model_usage_summaries", {}).items():
-    print(
-        f"{model_name}: input={model_usage.get('total_input_tokens', 0):,}, "
-        f"output={model_usage.get('total_output_tokens', 0):,}, "
-        f"calls={model_usage.get('total_calls', 0)}"
-    )
+print_client_usage(baseline_client)
 
 print("\n" + "=" * 70)
 print("RLM")
@@ -66,8 +65,8 @@ print("=" * 70)
 logger = RLMLogger()
 
 agent = RLM(
-    backend="gemini",
-    backend_kwargs=backend_kwargs.copy(),
+    backend=backend_config.backend,
+    backend_kwargs=backend_config.backend_kwargs.copy(),
     environment="local",
     environment_kwargs={"disable_plain_lm_queries": True},
     max_depth=3,

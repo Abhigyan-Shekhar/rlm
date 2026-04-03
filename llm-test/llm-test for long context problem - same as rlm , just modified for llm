@@ -1,8 +1,17 @@
-import os
+import sys
 import time
+from pathlib import Path
 
-import google.generativeai as genai
 from dotenv import load_dotenv
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from benchmark_backend import (
+    get_benchmark_client,
+    load_benchmark_backend,
+    print_client_usage,
+    wait_for_benchmark_cooldown,
+)
 
 load_dotenv()
 
@@ -72,101 +81,35 @@ Copy the exact sentence from the document that identifies AuthProxy-Primary as t
 Q5 [Multi-hop reasoning]:
 Fact A: AuthProxy-Primary handles all inbound authentication requests for the main application cluster.
 Given that, and using the FAILOVER_ENABLED value for AuthProxy-Primary found in the document — what happens if AuthProxy-Primary fails? Explain using only information present in the document.
-
-─────────────────────────────────────────────────────
-SCORING GUIDE (for evaluator use only — do not show to model)
-─────────────────────────────────────────────────────
-
-Q1 correct answer : 7
-Q2 correct answer : 7
-Q3 correct answer : 7  (model must resist the "5" red herring)
-Q4 correct answer : "This is the active production configuration as of 2025-01-09."
-Q5 correct answer : FAILOVER_ENABLED = false for AuthProxy-Primary, so if it fails,
-                    there is no automatic failover. Model must not import assumptions.
-
-Grading:
-  Q1–Q3 : 1 point for exact match, 0 otherwise
-  Q4     : 1 point if cited sentence matches, 0 otherwise
-  Q5     : 0 / 0.5 (right conclusion, flawed chain) / 1 (correct + tight reasoning)
-
-Position variants to run:
-  - Target fact at beginning (~10% depth)
-  - Target fact at middle (~50% depth)   ← this prompt, as written
-  - Target fact at end (~90% depth)
-
-Context length variants:
-  Pad the noise blocks proportionally to hit: 2K / 8K / 32K / 100K+ tokens
-  Keep the target fact and all questions identical across lengths.
-
-Metrics to track per (position × length) cell:
-  - Q1–Q4 accuracy
-  - Q3 misleading-fact capture rate
-  - Q5 partial credit distribution
-  - Entity cited in Q4 (AuthProxy-Primary vs decoy)
 """
 
-# ── Configure Gemini ──────────────────────────────────────────────────────────
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-
-MODEL_NAME = "gemini-2.5-flash-lite"
-
-model = genai.GenerativeModel(model_name=MODEL_NAME)
-
-# ── Run inference ─────────────────────────────────────────────────────────────
-wall_start = time.perf_counter()
-llm_start  = time.perf_counter()
-
-response = model.generate_content(
-    prompt,
-    generation_config=genai.types.GenerationConfig(
-        temperature=0,          # deterministic for evals
-        max_output_tokens=1024,
-    ),
+backend_config = load_benchmark_backend(
+    default_gemini_model="gemini-2.5-flash-lite",
+    default_vllm_model="Qwen/Qwen2.5-7B-Instruct",
 )
 
-llm_end  = time.perf_counter()
+wait_for_benchmark_cooldown(backend_config)
+
+client = get_benchmark_client(backend_config)
+
+wall_start = time.perf_counter()
+response = client.completion(prompt)
 wall_end = time.perf_counter()
 
-llm_time  = llm_end  - llm_start
-wall_time = wall_end - wall_start
-
-# ── Extract response text ─────────────────────────────────────────────────────
-answer_text = response.text
-
-# ── Print results ─────────────────────────────────────────────────────────────
 print("\n" + "=" * 70)
 print("ANSWER")
 print("=" * 70)
-print(answer_text)
+print(f"Backend: {backend_config.backend}")
+print(f"Model:   {backend_config.model_name}")
+print(response)
 
 print("\n" + "=" * 70)
 print("LATENCY BREAKDOWN")
 print("=" * 70)
-print(f"  Total wall time:    {wall_time:.3f}s")
-print(f"  LLM call time:      {llm_time:.3f}s")
-print(f"  Overhead:           {wall_time - llm_time:.3f}s")
+print(f"  Total wall time:    {wall_end - wall_start:.3f}s")
 
-# ── Token usage ───────────────────────────────────────────────────────────────
 print("\n" + "=" * 70)
 print("TOKEN USAGE")
 print("=" * 70)
-
-usage = response.usage_metadata
-input_tokens  = usage.prompt_token_count
-output_tokens = usage.candidates_token_count
-total_tokens  = usage.total_token_count
-
-print(f"  Model:             {MODEL_NAME}")
-print(f"  Input tokens:      {input_tokens:,}")
-print(f"  Output tokens:     {output_tokens:,}")
-print(f"  Total tokens:      {total_tokens:,}")
-
-if output_tokens and llm_time > 0:
-    print(f"\n  {'─' * 40}")
-    print("  THROUGHPUT")
-    print(f"  {'─' * 40}")
-    print(f"  Output tokens/sec:   {output_tokens / llm_time:.1f} tok/s")
-    print(f"  ms per output token: {(llm_time / output_tokens) * 1000:.1f} ms/tok")
-    print(f"  Total tokens/sec:    {total_tokens / llm_time:.1f} tok/s")
-
+print_client_usage(client)
 print("=" * 70)
