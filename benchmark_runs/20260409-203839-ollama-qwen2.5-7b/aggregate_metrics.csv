@@ -1,0 +1,15 @@
+pair,label,mode,runs,successes,success_rate,avg_wall_s,median_wall_s,avg_total_tokens,avg_input_tokens,avg_output_tokens
+got,Battle of the Bastards,LLM,5,5,100.0,8.351,7.631,312.400,275.000,37.400
+got,Battle of the Bastards,RLM,5,5,100.0,131.152,116.849,11990.400,11417.800,572.600
+authproxy,AuthProxy Long Context,LLM,5,5,100.0,22.581,21.342,1251.200,1082.000,169.200
+authproxy,AuthProxy Long Context,RLM,5,5,100.0,162.951,131.030,13727.800,12740.000,987.800
+clinical,Clinical Long Context,LLM,5,5,100.0,128.872,137.055,2946.400,1645.000,1301.400
+clinical,Clinical Long Context,RLM,5,5,100.0,57.925,52.092,11004.800,10663.000,341.800
+launch_note_app,Launch Note App,LLM,5,5,100.0,115.264,107.300,1560.600,257.000,1303.600
+launch_note_app,Launch Note App,RLM,5,5,100.0,223.344,155.597,11225.400,10052.400,1173.000
+pdf_cersei_warning,PDF Cersei Warning,LLM,5,5,100.0,89.760,94.292,4720.000,4096.000,624.000
+pdf_cersei_warning,PDF Cersei Warning,RLM,5,4,80.0,185.983,204.865,18184.750,17222.250,962.500
+tsp_branch_bound,Under-specified TSP,LLM,5,5,100.0,96.587,103.650,1356.800,209.000,1147.800
+tsp_branch_bound,Under-specified TSP,RLM,5,5,100.0,518.505,492.472,24516.400,20262.600,4253.800
+stochastic_tsp,Stochastic Adaptive TSP,LLM,5,5,100.0,83.156,72.327,1495.600,318.000,1177.600
+stochastic_tsp,Stochastic Adaptive TSP,RLM,5,5,100.0,402.231,292.076,20341.800,17058.200,3283.600

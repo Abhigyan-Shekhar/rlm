@@ -1,0 +1,141 @@
+pair,label,run,mode,exit_code,wall_s,exec_s,input_tokens,output_tokens,total_tokens,script,path
+got,Battle of the Bastards,1,LLM,0,9.832,9.832,275,56,331,llm-test/test_llm.py,got/run_001_llm.md
+got,Battle of the Bastards,1,RLM,0,73.517,73.048,8816,299,9115,rlm-test/test_got.py,got/run_001_rlm.md
+got,Battle of the Bastards,2,LLM,0,7.135,7.135,275,41,316,llm-test/test_llm.py,got/run_002_llm.md
+got,Battle of the Bastards,2,RLM,0,244.427,197.253,13982,936,14918,rlm-test/test_got.py,got/run_002_rlm.md
+got,Battle of the Bastards,3,LLM,0,7.756,7.756,275,33,308,llm-test/test_llm.py,got/run_003_llm.md
+got,Battle of the Bastards,3,RLM,0,73.046,72.665,8753,367,9120,rlm-test/test_got.py,got/run_003_rlm.md
+got,Battle of the Bastards,4,LLM,0,5.573,5.573,275,33,308,llm-test/test_llm.py,got/run_004_llm.md
+got,Battle of the Bastards,4,RLM,0,60.789,60.714,5483,289,5772,rlm-test/test_got.py,got/run_004_rlm.md
+got,Battle of the Bastards,5,LLM,0,8.717,8.717,275,30,305,llm-test/test_llm.py,got/run_005_llm.md
+got,Battle of the Bastards,5,RLM,0,90.114,89.877,8691,309,9000,rlm-test/test_got.py,got/run_005_rlm.md
+got,Battle of the Bastards,6,LLM,0,10.512,10.512,275,36,311,llm-test/test_llm.py,got/run_006_llm.md
+got,Battle of the Bastards,6,RLM,0,138.139,126.449,11828,455,12283,rlm-test/test_got.py,got/run_006_rlm.md
+got,Battle of the Bastards,7,LLM,0,7.247,7.247,275,38,313,llm-test/test_llm.py,got/run_007_llm.md
+got,Battle of the Bastards,7,RLM,0,116.849,106.258,11914,407,12321,rlm-test/test_got.py,got/run_007_rlm.md
+got,Battle of the Bastards,8,LLM,0,10.503,10.503,275,33,308,llm-test/test_llm.py,got/run_008_llm.md
+got,Battle of the Bastards,8,RLM,0,109.263,103.557,12387,515,12902,rlm-test/test_got.py,got/run_008_rlm.md
+got,Battle of the Bastards,9,LLM,0,5.864,5.864,275,44,319,llm-test/test_llm.py,got/run_009_llm.md
+got,Battle of the Bastards,9,RLM,0,73.804,73.478,8762,450,9212,rlm-test/test_got.py,got/run_009_rlm.md
+got,Battle of the Bastards,10,LLM,0,7.631,7.631,275,36,311,llm-test/test_llm.py,got/run_010_llm.md
+got,Battle of the Bastards,10,RLM,0,217.703,154.3,12198,1036,13234,rlm-test/test_got.py,got/run_010_rlm.md
+authproxy,AuthProxy Long Context,1,LLM,0,30.373,30.373,1082,178,1260,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_001_llm.md
+authproxy,AuthProxy Long Context,1,RLM,0,169.596,169.158,6619,1414,8033,rlm-test/test_long_context_authproxy.py,authproxy/run_001_rlm.md
+authproxy,AuthProxy Long Context,2,LLM,0,20.656,20.656,1082,145,1227,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_002_llm.md
+authproxy,AuthProxy Long Context,2,RLM,0,219.642,173.374,13844,1741,15585,rlm-test/test_long_context_authproxy.py,authproxy/run_002_rlm.md
+authproxy,AuthProxy Long Context,3,LLM,0,20.201,20.201,1082,149,1231,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_003_llm.md
+authproxy,AuthProxy Long Context,3,RLM,0,146.474,118.017,13488,990,14478,rlm-test/test_long_context_authproxy.py,authproxy/run_003_rlm.md
+authproxy,AuthProxy Long Context,4,LLM,0,24.106,24.106,1082,171,1253,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_004_llm.md
+authproxy,AuthProxy Long Context,4,RLM,0,173.042,112.295,13385,937,14322,rlm-test/test_long_context_authproxy.py,authproxy/run_004_rlm.md
+authproxy,AuthProxy Long Context,5,LLM,0,23.109,23.109,1082,187,1269,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_005_llm.md
+authproxy,AuthProxy Long Context,5,RLM,0,186.782,153.458,11409,1176,12585,rlm-test/test_long_context_authproxy.py,authproxy/run_005_rlm.md
+authproxy,AuthProxy Long Context,6,LLM,0,30.426,30.426,1082,190,1272,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_006_llm.md
+authproxy,AuthProxy Long Context,6,RLM,0,316.27,256.959,14016,1921,15937,rlm-test/test_long_context_authproxy.py,authproxy/run_006_rlm.md
+authproxy,AuthProxy Long Context,7,LLM,0,25.545,25.545,1082,192,1274,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_007_llm.md
+authproxy,AuthProxy Long Context,7,RLM,0,91.398,52.809,13373,129,13502,rlm-test/test_long_context_authproxy.py,authproxy/run_007_rlm.md
+authproxy,AuthProxy Long Context,8,LLM,0,21.342,21.342,1082,157,1239,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_008_llm.md
+authproxy,AuthProxy Long Context,8,RLM,0,171.021,110.262,14000,1087,15087,rlm-test/test_long_context_authproxy.py,authproxy/run_008_rlm.md
+authproxy,AuthProxy Long Context,9,LLM,0,20.94,20.94,1082,150,1232,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_009_llm.md
+authproxy,AuthProxy Long Context,9,RLM,0,105.034,104.956,9285,674,9959,rlm-test/test_long_context_authproxy.py,authproxy/run_009_rlm.md
+authproxy,AuthProxy Long Context,10,LLM,0,14.653,14.653,1082,157,1239,"llm-test/llm-test for long context problem - same as rlm , just modified for llm",authproxy/run_010_llm.md
+authproxy,AuthProxy Long Context,10,RLM,0,131.03,88.606,13026,1128,14154,rlm-test/test_long_context_authproxy.py,authproxy/run_010_rlm.md
+clinical,Clinical Long Context,1,LLM,0,137.57,137.57,1645,1583,3228,llm-test/clinical-llm.py,clinical/run_001_llm.md
+clinical,Clinical Long Context,1,RLM,0,35.334,31.44,10181,125,10306,rlm-test/test_long_context_clinical_trial.py,clinical/run_001_rlm.md
+clinical,Clinical Long Context,2,LLM,0,111.993,111.993,1645,1312,2957,llm-test/clinical-llm.py,clinical/run_002_llm.md
+clinical,Clinical Long Context,2,RLM,0,52.487,44.638,10392,351,10743,rlm-test/test_long_context_clinical_trial.py,clinical/run_002_rlm.md
+clinical,Clinical Long Context,3,LLM,0,112.244,112.244,1645,1234,2879,llm-test/clinical-llm.py,clinical/run_003_llm.md
+clinical,Clinical Long Context,3,RLM,0,34.254,32.456,10160,123,10283,rlm-test/test_long_context_clinical_trial.py,clinical/run_003_rlm.md
+clinical,Clinical Long Context,4,LLM,0,101.873,101.873,1645,1270,2915,llm-test/clinical-llm.py,clinical/run_004_llm.md
+clinical,Clinical Long Context,4,RLM,0,343.306,281.513,15177,2883,18060,rlm-test/test_long_context_clinical_trial.py,clinical/run_004_rlm.md
+clinical,Clinical Long Context,5,LLM,0,57.73,57.73,1645,499,2144,llm-test/clinical-llm.py,clinical/run_005_llm.md
+clinical,Clinical Long Context,5,RLM,0,221.131,220.67,11609,1604,13213,rlm-test/test_long_context_clinical_trial.py,clinical/run_005_rlm.md
+clinical,Clinical Long Context,6,LLM,0,173.678,173.678,1645,1569,3214,llm-test/clinical-llm.py,clinical/run_006_llm.md
+clinical,Clinical Long Context,6,RLM,0,52.092,50.212,10208,196,10404,rlm-test/test_long_context_clinical_trial.py,clinical/run_006_rlm.md
+clinical,Clinical Long Context,7,LLM,0,137.055,137.055,1645,1582,3227,llm-test/clinical-llm.py,clinical/run_007_llm.md
+clinical,Clinical Long Context,7,RLM,0,51.368,38.129,10459,314,10773,rlm-test/test_long_context_clinical_trial.py,clinical/run_007_rlm.md
+clinical,Clinical Long Context,8,LLM,0,71.576,71.576,1645,743,2388,llm-test/clinical-llm.py,clinical/run_008_llm.md
+clinical,Clinical Long Context,8,RLM,0,84.931,55.651,11884,661,12545,rlm-test/test_long_context_clinical_trial.py,clinical/run_008_rlm.md
+clinical,Clinical Long Context,9,LLM,0,144.718,144.718,1645,1519,3164,llm-test/clinical-llm.py,clinical/run_009_llm.md
+clinical,Clinical Long Context,9,RLM,0,58.383,44.139,10644,320,10964,rlm-test/test_long_context_clinical_trial.py,clinical/run_009_rlm.md
+clinical,Clinical Long Context,10,LLM,0,117.333,117.333,1645,1094,2739,llm-test/clinical-llm.py,clinical/run_010_llm.md
+clinical,Clinical Long Context,10,RLM,0,42.849,35.657,10120,218,10338,rlm-test/test_long_context_clinical_trial.py,clinical/run_010_rlm.md
+launch_note_app,Launch Note App,1,LLM,0,81.166,81.166,257,978,1235,llm-test/test_launch_note_app.py,launch_note_app/run_001_llm.md
+launch_note_app,Launch Note App,1,RLM,0,226.218,147.923,11223,2144,13367,rlm-test/test_launch_note_app.py,launch_note_app/run_001_rlm.md
+launch_note_app,Launch Note App,2,LLM,0,88.222,88.222,257,1129,1386,llm-test/test_launch_note_app.py,launch_note_app/run_002_llm.md
+launch_note_app,Launch Note App,2,RLM,0,276.742,232.978,13106,2843,15949,rlm-test/test_launch_note_app.py,launch_note_app/run_002_rlm.md
+launch_note_app,Launch Note App,3,LLM,0,58.346,58.346,257,879,1136,llm-test/test_launch_note_app.py,launch_note_app/run_003_llm.md
+launch_note_app,Launch Note App,3,RLM,0,102.077,101.825,5808,1416,7224,rlm-test/test_launch_note_app.py,launch_note_app/run_003_rlm.md
+launch_note_app,Launch Note App,4,LLM,0,72.258,72.258,257,837,1094,llm-test/test_launch_note_app.py,launch_note_app/run_004_llm.md
+launch_note_app,Launch Note App,4,RLM,0,464.365,304.048,14161,2426,16587,rlm-test/test_launch_note_app.py,launch_note_app/run_004_rlm.md
+launch_note_app,Launch Note App,5,LLM,0,156.415,156.415,257,1400,1657,llm-test/test_launch_note_app.py,launch_note_app/run_005_llm.md
+launch_note_app,Launch Note App,5,RLM,0,296.16,291.026,10486,1942,12428,rlm-test/test_launch_note_app.py,launch_note_app/run_005_rlm.md
+launch_note_app,Launch Note App,6,LLM,0,107.3,107.3,257,1390,1647,llm-test/test_launch_note_app.py,launch_note_app/run_006_llm.md
+launch_note_app,Launch Note App,6,RLM,0,37.833,37.447,2590,197,2787,rlm-test/test_launch_note_app.py,launch_note_app/run_006_rlm.md
+launch_note_app,Launch Note App,7,LLM,0,146.679,146.679,257,1665,1922,llm-test/test_launch_note_app.py,launch_note_app/run_007_llm.md
+launch_note_app,Launch Note App,7,RLM,0,516.793,513.733,12879,1269,14148,rlm-test/test_launch_note_app.py,launch_note_app/run_007_rlm.md
+launch_note_app,Launch Note App,8,LLM,0,97.669,97.669,257,949,1206,llm-test/test_launch_note_app.py,launch_note_app/run_008_llm.md
+launch_note_app,Launch Note App,8,RLM,0,276.838,244.29,12936,2189,15125,rlm-test/test_launch_note_app.py,launch_note_app/run_008_rlm.md
+launch_note_app,Launch Note App,9,LLM,0,127.19,127.19,257,1489,1746,llm-test/test_launch_note_app.py,launch_note_app/run_009_llm.md
+launch_note_app,Launch Note App,9,RLM,0,129.657,123.546,12485,942,13427,rlm-test/test_launch_note_app.py,launch_note_app/run_009_rlm.md
+launch_note_app,Launch Note App,10,LLM,0,97.483,97.483,257,1025,1282,llm-test/test_launch_note_app.py,launch_note_app/run_010_llm.md
+launch_note_app,Launch Note App,10,RLM,0,155.597,155.469,9372,1268,10640,rlm-test/test_launch_note_app.py,launch_note_app/run_010_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,1,LLM,0,135.947,135.947,4096,728,4824,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_001_llm.md
+pdf_cersei_warning,PDF Cersei Warning,1,RLM,0,191.413,191.159,10247,903,11150,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_001_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,2,LLM,0,116.163,116.163,4096,692,4788,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_002_llm.md
+pdf_cersei_warning,PDF Cersei Warning,2,RLM,0,231.66,184.283,21579,899,22478,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_002_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,3,LLM,0,133.442,133.442,4096,816,4912,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_003_llm.md
+pdf_cersei_warning,PDF Cersei Warning,3,RLM,0,318.367,277.481,22295,1289,23584,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_003_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,4,LLM,0,133.707,133.707,4096,1085,5181,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_004_llm.md
+pdf_cersei_warning,PDF Cersei Warning,4,RLM,0,139.048,116.216,21496,777,22273,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_004_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,5,LLM,0,144.988,144.988,4096,1241,5337,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_005_llm.md
+pdf_cersei_warning,PDF Cersei Warning,5,RLM,0,181.494,123.025,21605,890,22495,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_005_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,6,LLM,0,119.11,119.11,4096,816,4912,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_006_llm.md
+pdf_cersei_warning,PDF Cersei Warning,6,RLM,-9,,,,,,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_006_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,7,LLM,0,64.506,64.506,4096,603,4699,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_007_llm.md
+pdf_cersei_warning,PDF Cersei Warning,7,RLM,0,291.35,246.308,22273,1490,23763,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_007_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,8,LLM,0,94.292,94.292,4096,613,4709,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_008_llm.md
+pdf_cersei_warning,PDF Cersei Warning,8,RLM,0,203.066,189.306,21905,1285,23190,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_008_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,9,LLM,0,75.969,75.969,4096,426,4522,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_009_llm.md
+pdf_cersei_warning,PDF Cersei Warning,9,RLM,0,42.854,42.83,2897,158,3055,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_009_rlm.md
+pdf_cersei_warning,PDF Cersei Warning,10,LLM,0,94.925,94.925,4096,662,4758,llm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_010_llm.md
+pdf_cersei_warning,PDF Cersei Warning,10,RLM,0,206.664,159.939,21814,917,22731,rlm-test/test_pdf_cersei_warning.py,pdf_cersei_warning/run_010_rlm.md
+tsp_branch_bound,Under-specified TSP,1,LLM,0,83.021,83.021,209,1154,1363,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_001_llm.md
+tsp_branch_bound,Under-specified TSP,1,RLM,0,253.519,253.28,12514,2661,15175,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_001_rlm.md
+tsp_branch_bound,Under-specified TSP,2,LLM,0,85.607,85.607,209,1055,1264,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_002_llm.md
+tsp_branch_bound,Under-specified TSP,2,RLM,0,369.738,296.882,23510,2468,25978,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_002_rlm.md
+tsp_branch_bound,Under-specified TSP,3,LLM,0,127.64,127.64,209,1057,1266,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_003_llm.md
+tsp_branch_bound,Under-specified TSP,3,RLM,0,705.174,697.629,22245,4097,26342,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_003_rlm.md
+tsp_branch_bound,Under-specified TSP,4,LLM,0,141.916,141.916,209,1103,1312,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_004_llm.md
+tsp_branch_bound,Under-specified TSP,4,RLM,0,970.961,846.544,20689,5498,26187,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_004_rlm.md
+tsp_branch_bound,Under-specified TSP,5,LLM,0,106.786,106.786,209,1209,1418,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_005_llm.md
+tsp_branch_bound,Under-specified TSP,5,RLM,0,254.008,192.689,21588,2306,23894,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_005_rlm.md
+tsp_branch_bound,Under-specified TSP,6,LLM,0,73.841,73.841,209,881,1090,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_006_llm.md
+tsp_branch_bound,Under-specified TSP,6,RLM,0,578.646,578.483,18593,5985,24578,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_006_rlm.md
+tsp_branch_bound,Under-specified TSP,7,LLM,0,105.367,105.367,209,1277,1486,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_007_llm.md
+tsp_branch_bound,Under-specified TSP,7,RLM,0,604.7,249.397,23194,2225,25419,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_007_rlm.md
+tsp_branch_bound,Under-specified TSP,8,LLM,0,103.65,103.65,209,1026,1235,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_008_llm.md
+tsp_branch_bound,Under-specified TSP,8,RLM,0,492.472,474.99,23723,4637,28360,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_008_rlm.md
+tsp_branch_bound,Under-specified TSP,9,LLM,0,106.855,106.855,209,1380,1589,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_009_llm.md
+tsp_branch_bound,Under-specified TSP,9,RLM,0,425.986,425.691,19388,4053,23441,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_009_rlm.md
+tsp_branch_bound,Under-specified TSP,10,LLM,0,93.224,93.224,209,1175,1384,llm-test/test_tsp_llm_only.py,tsp_branch_bound/run_010_llm.md
+tsp_branch_bound,Under-specified TSP,10,RLM,0,490.722,490.673,16415,4369,20784,rlm-test/test_tsp_branch_bound.py,tsp_branch_bound/run_010_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,1,LLM,0,98.209,98.209,318,1059,1377,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_001_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,1,RLM,0,633.152,582.324,24446,4417,28863,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_001_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,2,LLM,0,106.263,106.263,318,999,1317,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_002_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,2,RLM,0,1342.957,1238.97,24535,3297,27832,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_002_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,3,LLM,0,224.292,224.292,318,1170,1488,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_003_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,3,RLM,0,768.512,746.877,23597,2772,26369,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_003_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,4,LLM,0,207.149,207.149,318,1061,1379,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_004_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,4,RLM,-9,,,,,,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_004_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,5,LLM,0,185.63,185.63,318,974,1292,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_005_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,5,RLM,0,630.217,589.147,24982,2716,27698,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_005_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,6,LLM,0,96.515,96.515,318,1191,1509,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_006_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,6,RLM,0,873.264,819.806,21953,5586,27539,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_006_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,7,LLM,0,59.78,59.78,318,858,1176,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_007_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,7,RLM,0,152.822,152.617,12985,1484,14469,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_007_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,8,LLM,0,63.006,63.006,318,1213,1531,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_008_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,8,RLM,0,483.57,451.265,24592,4634,29226,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_008_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,9,LLM,0,124.153,124.153,318,1655,1973,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_009_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,9,RLM,0,292.076,291.926,16586,2583,19169,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_009_rlm.md
+stochastic_tsp,Stochastic Adaptive TSP,10,LLM,0,72.327,72.327,318,971,1289,llm-test/test_stochastic_tsp_adaptive_llm_only.py,stochastic_tsp/run_010_llm.md
+stochastic_tsp,Stochastic Adaptive TSP,10,RLM,0,209.424,209.153,9175,2131,11306,rlm-test/test_stochastic_tsp_adaptive.py,stochastic_tsp/run_010_rlm.md

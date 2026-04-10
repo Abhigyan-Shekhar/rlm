@@ -1,0 +1,26 @@
+pair,label,run,mode,source_branch,model_name,artifact_status,exit_code,wall_s,exec_s,input_tokens,output_tokens,total_tokens,source_file,notes
+got,Battle of the Bastards,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,1.153,,257,12,269,llm-test/llm-testing-1-parth.md,
+got,Battle of the Bastards,2,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,0.987,,257,13,270,llm-test/llm-test2.py-parth.md,
+got,Battle of the Bastards,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,partial,1,9.014,6.818,,,,rlm-test/test2-rlms.md,Script crashed while walking iteration metadata after printing latency; token counts were not preserved.
+authproxy,AuthProxy Long Context,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,1.463,,1443,69,1512,llm-test/output for llm long context training.md,
+authproxy,AuthProxy Long Context,2,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,1.127,,1443,66,1509,benchmark_rerun_authproxy.md,Metrics copied from the later rerun note.
+authproxy,AuthProxy Long Context,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,13.171,13.005,9323,1680,11003,rlm-test/output for long context problem.md,
+authproxy,AuthProxy Long Context,2,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,13.941,11.613,15330,1628,16958,benchmark_rerun_authproxy.md,Metrics copied from the later rerun note.
+clinical,Clinical Long Context,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,1.956,,1841,283,2124,llm-test/clinical-llm-output.md,
+clinical,Clinical Long Context,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,15.507,15.28,7481,4290,11771,rlm-test/clincal-rlm-output.md,
+launch_note_app,Launch Note App,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,8.013,,256,1888,2144,llm-test/test_launch_note_app.md,
+launch_note_app,Launch Note App,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,20.671,20.383,5854,5362,11216,rlm-test/test_launch_note_app.md,
+pdf_cersei_warning,PDF Cersei Warning,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,36.382,,195096,13,195109,llm-test/test_pdf_cersei_warning.md,
+pdf_cersei_warning,PDF Cersei Warning,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash-lite,complete,0,134.761,134.297,74777,66229,141006,rlm-test/test_pdf_cersei_warning.md,
+tsp_branch_bound,Under-specified TSP,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,10.654,,190,179,369,rlm-test/test_tsp_branch_bound.md,First complete pair in the archival TSP markdown.
+tsp_branch_bound,Under-specified TSP,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,13.053,12.768,17033,486,17519,rlm-test/test_tsp_branch_bound.md,First complete pair in the archival TSP markdown.
+tsp_branch_bound,Under-specified TSP,2,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,94.752,,190,7354,7544,rlm-test/test_tsp_branch_bound.md,Later appended pair in the same archival markdown.
+tsp_branch_bound,Under-specified TSP,2,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,18.141,15.851,23284,770,24054,rlm-test/test_tsp_branch_bound.md,Later appended pair in the same archival markdown.
+tsp_branch_bound,Under-specified TSP,3,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,97.285,,190,4388,4578,llm-test/test_tsp_llm_only.md,
+tsp_branch_bound,Under-specified TSP,4,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,97.364,,190,6171,6361,llm-test/test_tsp_llm_only_additional_run.md,
+tsp_branch_bound,Under-specified TSP,3,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,15.27,,12959,275,13234,rlm-test/test_tsp_branch_bound_additional_run.md,
+tsp_branch_bound,Under-specified TSP,4,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,metrics_only,0,,20.25,24367,1006,25373,benchmark_rerun_tsp.md,Later rerun note preserved execution time but not total wall time.
+stochastic_tsp,Stochastic Adaptive TSP,1,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,85.612,,300,6132,6432,llm-test/test_stochastic_tsp_adaptive_llm_only.md,
+stochastic_tsp,Stochastic Adaptive TSP,2,LLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,63.454,,300,4949,5249,rlm-test/test_stochastic_tsp_adaptive.md,Baseline block preserved inside the paired RLM markdown.
+stochastic_tsp,Stochastic Adaptive TSP,1,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,91.699,91.452,80103,11336,91439,rlm-test/test_stochastic_tsp_adaptive.md,
+stochastic_tsp,Stochastic Adaptive TSP,2,RLM,anshul-benchmark-findings-clean,gemini-2.5-flash,complete,0,73.576,73.378,14740,3328,18068,benchmark_rerun_stochastic_tsp.md,Later rerun note with metric-only archival capture.

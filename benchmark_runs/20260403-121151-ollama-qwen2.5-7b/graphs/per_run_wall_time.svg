@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="700" viewBox="0 0 1700 700">
+<rect x="0" y="0" width="1700" height="700" fill="white"/>
+<text x="850.0" y="34" text-anchor="middle" font-size="24" fill="#111827" font-family="Arial">Per-Run Wall Time</text>
+<text x="850.0" y="682" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial">Benchmark Run</text>
+<text x="22" y="275.0" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial" transform="rotate(-90 22 275.0)">Seconds</text>
+<line x1="90" y1="480.0" x2="1660" y2="480.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="484.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">0</text>
+<line x1="90" y1="398.0" x2="1660" y2="398.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="402.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">295</text>
+<line x1="90" y1="316.0" x2="1660" y2="316.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="320.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">591</text>
+<line x1="90" y1="234.0" x2="1660" y2="234.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="238.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">886</text>
+<line x1="90" y1="152.0" x2="1660" y2="152.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="156.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">1182</text>
+<line x1="90" y1="70.0" x2="1660" y2="70.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="74.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">1477</text>
+<line x1="90" y1="70" x2="90" y2="480" stroke="#111827" stroke-width="1.5"/>
+<line x1="90" y1="480" x2="1660" y2="480" stroke="#111827" stroke-width="1.5"/>
+<path d="M 90.00 477.27 L 136.18 478.02 L 182.35 477.85 L 228.53 478.45 L 274.71 477.58 L 320.88 471.57 L 367.06 474.27 L 413.24 474.39 L 459.41 473.31 L 505.59 473.59 L 551.76 441.82 L 597.94 448.92 L 644.12 448.85 L 690.29 451.73 L 736.47 463.98 L 782.65 457.47 L 828.82 455.51 L 875.00 463.81 L 921.18 459.95 L 967.35 436.59 L 1013.53 442.27 L 1059.71 447.76 L 1105.88 442.96 L 1152.06 442.89 L 1198.24 439.76 L 1244.41 456.96 L 1290.59 456.24 L 1336.76 444.57 L 1382.94 440.61 L 1429.12 450.36 L 1475.29 452.74 L 1521.47 450.51 L 1567.65 417.75 L 1613.82 422.51 L 1660.00 428.48" fill="none" stroke="#2563eb" stroke-width="3"/>
+<path d="M 90.00 459.60 L 136.18 412.16 L 182.35 459.73 L 228.53 463.13 L 274.71 454.99 L 320.88 432.93 L 367.06 419.04 L 413.24 439.35 L 459.41 431.97 L 505.59 428.16 L 551.76 470.19 L 597.94 465.43 L 644.12 470.49 L 690.29 384.72 L 736.47 418.63 L 782.65 417.21 L 828.82 403.19 L 875.00 451.67 L 921.18 351.12 L 967.35 397.80 L 1013.53 426.87 L 1059.71 415.70 L 1105.88 391.64 L 1152.06 441.41 L 1198.24 429.63 L 1244.41 409.64 L 1290.59 377.38 L 1336.76 284.28 L 1382.94 210.52 L 1429.12 409.50 L 1475.29 304.27 L 1521.47 107.27 L 1567.65 266.71 L 1660.00 305.09" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="90.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 90.0 498)">got-r001</text>
+<circle cx="90.0" cy="477.2712048520879" r="4" fill="#2563eb"/>
+<circle cx="90.0" cy="459.5959283066465" r="4" fill="#dc2626"/>
+<text x="136.1764705882353" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 136.1764705882353 498)">got-r002</text>
+<circle cx="136.1764705882353" cy="478.01973623063947" r="4" fill="#2563eb"/>
+<circle cx="136.1764705882353" cy="412.161186775966" r="4" fill="#dc2626"/>
+<text x="182.3529411764706" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 182.3529411764706 498)">got-r003</text>
+<circle cx="182.3529411764706" cy="477.847382509438" r="4" fill="#2563eb"/>
+<circle cx="182.3529411764706" cy="459.7266506942245" r="4" fill="#dc2626"/>
+<text x="228.52941176470588" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 228.52941176470588 498)">got-r004</text>
+<circle cx="228.52941176470588" cy="478.4532571847728" r="4" fill="#2563eb"/>
+<circle cx="228.52941176470588" cy="463.1284857357174" r="4" fill="#dc2626"/>
+<text x="274.7058823529412" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 274.7058823529412 498)">got-r005</text>
+<circle cx="274.7058823529412" cy="477.580664432023" r="4" fill="#2563eb"/>
+<circle cx="274.7058823529412" cy="454.98956001231204" r="4" fill="#dc2626"/>
+<text x="320.88235294117646" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 320.88235294117646 498)">authproxy-r001</text>
+<circle cx="320.88235294117646" cy="471.5702100256781" r="4" fill="#2563eb"/>
+<circle cx="320.88235294117646" cy="432.9299489518618" r="4" fill="#dc2626"/>
+<text x="367.05882352941177" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 367.05882352941177 498)">authproxy-r002</text>
+<circle cx="367.05882352941177" cy="474.26708781781207" r="4" fill="#2563eb"/>
+<circle cx="367.05882352941177" cy="419.04007080169833" r="4" fill="#dc2626"/>
+<text x="413.2352941176471" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 413.2352941176471 498)">authproxy-r003</text>
+<circle cx="413.2352941176471" cy="474.3933695298035" r="4" fill="#2563eb"/>
+<circle cx="413.2352941176471" cy="439.347280258821" r="4" fill="#dc2626"/>
+<text x="459.4117647058824" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 459.4117647058824 498)">authproxy-r004</text>
+<circle cx="459.4117647058824" cy="473.3095671444703" r="4" fill="#2563eb"/>
+<circle cx="459.4117647058824" cy="431.9735384474166" r="4" fill="#dc2626"/>
+<text x="505.5882352941177" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 505.5882352941177 498)">authproxy-r005</text>
+<circle cx="505.5882352941177" cy="473.58627674195486" r="4" fill="#2563eb"/>
+<circle cx="505.5882352941177" cy="428.1601082874988" r="4" fill="#dc2626"/>
+<text x="551.7647058823529" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 551.7647058823529 498)">clinical-r001</text>
+<circle cx="551.7647058823529" cy="441.81851622271535" r="4" fill="#2563eb"/>
+<circle cx="551.7647058823529" cy="470.193323051635" r="4" fill="#dc2626"/>
+<text x="597.9411764705883" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 597.9411764705883 498)">clinical-r002</text>
+<circle cx="597.9411764705883" cy="448.9172136899801" r="4" fill="#2563eb"/>
+<circle cx="597.9411764705883" cy="465.4326412806692" r="4" fill="#dc2626"/>
+<text x="644.1176470588235" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 644.1176470588235 498)">clinical-r003</text>
+<circle cx="644.1176470588235" cy="448.84755059171664" r="4" fill="#2563eb"/>
+<circle cx="644.1176470588235" cy="470.4930686537246" r="4" fill="#dc2626"/>
+<text x="690.2941176470589" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 690.2941176470589 498)">clinical-r004</text>
+<circle cx="690.2941176470589" cy="451.72594099844935" r="4" fill="#2563eb"/>
+<circle cx="690.2941176470589" cy="384.7180891935415" r="4" fill="#dc2626"/>
+<text x="736.4705882352941" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 736.4705882352941 498)">clinical-r005</text>
+<circle cx="736.4705882352941" cy="463.9774873994138" r="4" fill="#2563eb"/>
+<circle cx="736.4705882352941" cy="418.62681042992847" r="4" fill="#dc2626"/>
+<text x="782.6470588235295" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 782.6470588235295 498)">launch_note_app-r001</text>
+<circle cx="782.6470588235295" cy="457.4730078340693" r="4" fill="#2563eb"/>
+<circle cx="782.6470588235295" cy="417.2149531356416" r="4" fill="#dc2626"/>
+<text x="828.8235294117648" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 828.8235294117648 498)">launch_note_app-r002</text>
+<circle cx="828.8235294117648" cy="455.5146699004172" r="4" fill="#2563eb"/>
+<circle cx="828.8235294117648" cy="403.19240980233104" r="4" fill="#dc2626"/>
+<text x="875.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 875.0 498)">launch_note_app-r003</text>
+<circle cx="875.0" cy="463.80652138933306" r="4" fill="#2563eb"/>
+<circle cx="875.0" cy="451.66932238472134" r="4" fill="#dc2626"/>
+<text x="921.1764705882354" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 921.1764705882354 498)">launch_note_app-r004</text>
+<circle cx="921.1764705882354" cy="459.94535396686024" r="4" fill="#2563eb"/>
+<circle cx="921.1764705882354" cy="351.11910507931384" r="4" fill="#dc2626"/>
+<text x="967.3529411764706" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 967.3529411764706 498)">launch_note_app-r005</text>
+<circle cx="967.3529411764706" cy="436.5882330084758" r="4" fill="#2563eb"/>
+<circle cx="967.3529411764706" cy="397.8030948936496" r="4" fill="#dc2626"/>
+<text x="1013.529411764706" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1013.529411764706 498)">pdf_cersei_warning-r001</text>
+<circle cx="1013.529411764706" cy="442.2689672525222" r="4" fill="#2563eb"/>
+<circle cx="1013.529411764706" cy="426.87481024742755" r="4" fill="#dc2626"/>
+<text x="1059.7058823529412" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1059.7058823529412 498)">pdf_cersei_warning-r002</text>
+<circle cx="1059.7058823529412" cy="447.7598626152452" r="4" fill="#2563eb"/>
+<circle cx="1059.7058823529412" cy="415.70456835177896" r="4" fill="#dc2626"/>
+<text x="1105.8823529411766" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1105.8823529411766 498)">pdf_cersei_warning-r003</text>
+<circle cx="1105.8823529411766" cy="442.9642105240356" r="4" fill="#2563eb"/>
+<circle cx="1105.8823529411766" cy="391.63971472179406" r="4" fill="#dc2626"/>
+<text x="1152.058823529412" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1152.058823529412 498)">pdf_cersei_warning-r004</text>
+<circle cx="1152.058823529412" cy="442.890661834634" r="4" fill="#2563eb"/>
+<circle cx="1152.058823529412" cy="441.4083088154112" r="4" fill="#dc2626"/>
+<text x="1198.235294117647" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1198.235294117647 498)">pdf_cersei_warning-r005</text>
+<circle cx="1198.235294117647" cy="439.7597080039184" r="4" fill="#2563eb"/>
+<circle cx="1198.235294117647" cy="429.6277515688413" r="4" fill="#dc2626"/>
+<text x="1244.4117647058824" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1244.4117647058824 498)">tsp_branch_bound-r001</text>
+<circle cx="1244.4117647058824" cy="456.958167008258" r="4" fill="#2563eb"/>
+<circle cx="1244.4117647058824" cy="409.6377728739301" r="4" fill="#dc2626"/>
+<text x="1290.5882352941178" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1290.5882352941178 498)">tsp_branch_bound-r002</text>
+<circle cx="1290.5882352941178" cy="456.24044281658786" r="4" fill="#2563eb"/>
+<circle cx="1290.5882352941178" cy="377.38209312462254" r="4" fill="#dc2626"/>
+<text x="1336.764705882353" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1336.764705882353 498)">tsp_branch_bound-r003</text>
+<circle cx="1336.764705882353" cy="444.57451050859476" r="4" fill="#2563eb"/>
+<circle cx="1336.764705882353" cy="284.28443962228" r="4" fill="#dc2626"/>
+<text x="1382.9411764705883" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1382.9411764705883 498)">tsp_branch_bound-r004</text>
+<circle cx="1382.9411764705883" cy="440.6123177165288" r="4" fill="#2563eb"/>
+<circle cx="1382.9411764705883" cy="210.51732449025144" r="4" fill="#dc2626"/>
+<text x="1429.1176470588236" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1429.1176470588236 498)">tsp_branch_bound-r005</text>
+<circle cx="1429.1176470588236" cy="450.36237605116577" r="4" fill="#2563eb"/>
+<circle cx="1429.1176470588236" cy="409.5020547263173" r="4" fill="#dc2626"/>
+<text x="1475.294117647059" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1475.294117647059 498)">stochastic_tsp-r001</text>
+<circle cx="1475.294117647059" cy="452.7428557077608" r="4" fill="#2563eb"/>
+<circle cx="1475.294117647059" cy="304.27358569051864" r="4" fill="#dc2626"/>
+<text x="1521.4705882352941" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1521.4705882352941 498)">stochastic_tsp-r002</text>
+<circle cx="1521.4705882352941" cy="450.5075306343999" r="4" fill="#2563eb"/>
+<circle cx="1521.4705882352941" cy="107.27272727272731" r="4" fill="#dc2626"/>
+<text x="1567.6470588235295" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1567.6470588235295 498)">stochastic_tsp-r003</text>
+<circle cx="1567.6470588235295" cy="417.74949945936805" r="4" fill="#2563eb"/>
+<circle cx="1567.6470588235295" cy="266.70547022862104" r="4" fill="#dc2626"/>
+<text x="1613.8235294117649" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1613.8235294117649 498)">stochastic_tsp-r004</text>
+<circle cx="1613.8235294117649" cy="422.5074058080923" r="4" fill="#2563eb"/>
+<text x="1660.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1660.0 498)">stochastic_tsp-r005</text>
+<circle cx="1660.0" cy="428.47983692972775" r="4" fill="#2563eb"/>
+<circle cx="1660.0" cy="305.0881721184196" r="4" fill="#dc2626"/>
+<rect x="1500" y="50" width="14" height="14" fill="#2563eb"/>
+<text x="1522" y="62" font-size="12" fill="#111827" font-family="Arial">LLM</text>
+<rect x="1580" y="50" width="14" height="14" fill="#dc2626"/>
+<text x="1602" y="62" font-size="12" fill="#111827" font-family="Arial">RLM</text>
+</svg>

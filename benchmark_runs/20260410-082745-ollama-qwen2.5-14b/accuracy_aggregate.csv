@@ -1,0 +1,15 @@
+pair,label,mode,runs,mean_accuracy,median_accuracy,min_accuracy,max_accuracy,std_accuracy
+got,Battle of the Bastards,LLM,5,1.000,1.000,1.000,1.000,0.000
+got,Battle of the Bastards,RLM,5,0.000,0.000,0.000,0.000,0.000
+authproxy,AuthProxy Long Context,LLM,5,1.000,1.000,1.000,1.000,0.000
+authproxy,AuthProxy Long Context,RLM,5,0.480,0.400,0.000,1.000,0.371
+clinical,Clinical Long Context,LLM,5,0.800,1.000,0.000,1.000,0.400
+clinical,Clinical Long Context,RLM,5,0.187,0.000,0.000,0.933,0.373
+launch_note_app,Launch Note App,LLM,5,0.860,0.900,0.800,0.900,0.049
+launch_note_app,Launch Note App,RLM,5,0.180,0.000,0.000,0.600,0.240
+pdf_cersei_warning,PDF Cersei Warning,LLM,5,0.000,0.000,0.000,0.000,0.000
+pdf_cersei_warning,PDF Cersei Warning,RLM,5,0.000,0.000,0.000,0.000,0.000
+tsp_branch_bound,Under-specified TSP,LLM,3,0.000,0.000,0.000,0.000,0.000
+tsp_branch_bound,Under-specified TSP,RLM,3,0.000,0.000,0.000,0.000,0.000
+stochastic_tsp,Stochastic Adaptive TSP,LLM,3,0.000,0.000,0.000,0.000,0.000
+stochastic_tsp,Stochastic Adaptive TSP,RLM,3,0.000,0.000,0.000,0.000,0.000

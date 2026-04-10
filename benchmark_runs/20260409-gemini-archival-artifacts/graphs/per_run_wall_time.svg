@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="700" viewBox="0 0 1700 700">
+<rect x="0" y="0" width="1700" height="700" fill="white"/>
+<text x="850.0" y="34" text-anchor="middle" font-size="24" fill="#111827" font-family="Arial">Gemini Archival Per-Run Wall Time</text>
+<text x="850.0" y="682" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial">Benchmark Run</text>
+<text x="22" y="275.0" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial" transform="rotate(-90 22 275.0)">Seconds</text>
+<line x1="90" y1="480.0" x2="1660" y2="480.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="484.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">0</text>
+<line x1="90" y1="398.0" x2="1660" y2="398.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="402.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">30</text>
+<line x1="90" y1="316.0" x2="1660" y2="316.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="320.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">59</text>
+<line x1="90" y1="234.0" x2="1660" y2="234.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="238.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">89</text>
+<line x1="90" y1="152.0" x2="1660" y2="152.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="156.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">119</text>
+<line x1="90" y1="70.0" x2="1660" y2="70.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="74.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">148</text>
+<line x1="90" y1="70" x2="90" y2="480" stroke="#111827" stroke-width="1.5"/>
+<line x1="90" y1="480" x2="1660" y2="480" stroke="#111827" stroke-width="1.5"/>
+<path d="M 90.00 476.81 L 220.83 477.27 L 351.67 475.95 L 482.50 476.88 L 613.33 474.59 L 744.17 457.84 L 875.00 379.37 L 1005.83 450.53 L 1136.67 217.93 L 1267.50 210.93 L 1398.33 210.71 L 1529.17 243.21 L 1660.00 304.50" fill="none" stroke="#2563eb" stroke-width="3"/>
+<path d="M 90.00 455.07 L 351.67 443.57 L 482.50 441.44 L 613.33 437.11 L 744.17 422.83 L 875.00 107.27 L 1005.83 443.90 L 1136.67 429.82 L 1267.50 437.77 L 1529.17 226.38 L 1660.00 276.50" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="90.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 90.0 498)">got-r001</text>
+<circle cx="90.0" cy="476.8109872629726" r="4" fill="#2563eb"/>
+<circle cx="90.0" cy="455.06872436117544" r="4" fill="#dc2626"/>
+<text x="220.83333333333334" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 220.83333333333334 498)">got-r002</text>
+<circle cx="220.83333333333334" cy="477.2701165902463" r="4" fill="#2563eb"/>
+<text x="351.6666666666667" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 351.6666666666667 498)">authproxy-r001</text>
+<circle cx="351.6666666666667" cy="475.95357707348563" r="4" fill="#2563eb"/>
+<circle cx="351.6666666666667" cy="443.57113030408715" r="4" fill="#dc2626"/>
+<text x="482.5" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 482.5 498)">authproxy-r002</text>
+<circle cx="482.5" cy="476.8828990853167" r="4" fill="#2563eb"/>
+<circle cx="482.5" cy="441.4414340269743" r="4" fill="#dc2626"/>
+<text x="613.3333333333334" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 613.3333333333334 498)">clinical-r001</text>
+<circle cx="613.3333333333334" cy="474.5900182882693" r="4" fill="#2563eb"/>
+<circle cx="613.3333333333334" cy="437.11012965040464" r="4" fill="#dc2626"/>
+<text x="744.1666666666667" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 744.1666666666667 498)">launch_note_app-r001</text>
+<circle cx="744.1666666666667" cy="457.8373295214221" r="4" fill="#2563eb"/>
+<circle cx="744.1666666666667" cy="422.82733539714417" r="4" fill="#dc2626"/>
+<text x="875.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 875.0 498)">pdf_cersei_warning-r001</text>
+<circle cx="875.0" cy="379.37323382607997" r="4" fill="#2563eb"/>
+<circle cx="875.0" cy="107.27272727272731" r="4" fill="#dc2626"/>
+<text x="1005.8333333333334" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1005.8333333333334 498)">tsp_branch_bound-r001</text>
+<circle cx="1005.8333333333334" cy="450.53274787485725" r="4" fill="#2563eb"/>
+<circle cx="1005.8333333333334" cy="443.8974993439564" r="4" fill="#dc2626"/>
+<text x="1136.6666666666667" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1136.6666666666667 498)">tsp_branch_bound-r002</text>
+<circle cx="1136.6666666666667" cy="217.93119266364494" r="4" fill="#2563eb"/>
+<circle cx="1136.6666666666667" cy="429.82490887908625" r="4" fill="#dc2626"/>
+<text x="1267.5" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1267.5 498)">tsp_branch_bound-r003</text>
+<circle cx="1267.5" cy="210.92532166374008" r="4" fill="#2563eb"/>
+<circle cx="1267.5" cy="437.76563356946406" r="4" fill="#dc2626"/>
+<text x="1398.3333333333335" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1398.3333333333335 498)">tsp_branch_bound-r004</text>
+<circle cx="1398.3333333333335" cy="210.7068203573869" r="4" fill="#2563eb"/>
+<text x="1529.1666666666667" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1529.1666666666667 498)">stochastic_tsp-r001</text>
+<circle cx="1529.1666666666667" cy="243.21096405690614" r="4" fill="#2563eb"/>
+<circle cx="1529.1666666666667" cy="226.37530011043123" r="4" fill="#dc2626"/>
+<text x="1660.0" y="498" text-anchor="end" font-size="10" fill="#111827" font-family="Arial" transform="rotate(-45 1660.0 498)">stochastic_tsp-r002</text>
+<circle cx="1660.0" cy="304.49643172997855" r="4" fill="#2563eb"/>
+<circle cx="1660.0" cy="276.5006061235683" r="4" fill="#dc2626"/>
+<rect x="1500" y="50" width="14" height="14" fill="#2563eb"/>
+<text x="1522" y="62" font-size="12" fill="#111827" font-family="Arial">LLM</text>
+<rect x="1580" y="50" width="14" height="14" fill="#dc2626"/>
+<text x="1602" y="62" font-size="12" fill="#111827" font-family="Arial">RLM</text>
+</svg>

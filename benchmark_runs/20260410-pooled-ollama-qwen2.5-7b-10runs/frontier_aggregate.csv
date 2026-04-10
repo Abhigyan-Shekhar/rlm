@@ -1,0 +1,15 @@
+pair,label,short_label,mode,runs,wall_mean,wall_std,wall_ci95,tokens_mean,tokens_std,tokens_ci95,accuracy_mean,accuracy_std,accuracy_ci95
+got,Battle of the Bastards,Battle,LLM,10,8.077,1.775,1.558,313.000,7.572,6.647,1.000,0.000,0.000
+got,Battle of the Bastards,Battle,RLM,10,119.765,63.579,55.812,10787.700,2759.147,2422.113,0.800,0.422,0.370
+authproxy,AuthProxy Long Context,Auth,LLM,10,23.135,4.796,4.210,1249.600,18.210,15.986,1.000,0.000,0.000
+authproxy,AuthProxy Long Context,Auth,RLM,10,171.029,63.781,55.990,13364.200,2537.370,2227.426,0.420,0.416,0.365
+clinical,Clinical Long Context,Clinical,LLM,10,116.577,34.411,30.208,2885.500,371.815,326.397,0.900,0.316,0.278
+clinical,Clinical Long Context,Clinical,RLM,10,97.614,102.448,89.934,11762.900,2431.641,2134.612,0.180,0.382,0.336
+launch_note_app,Launch Note App,Launch,LLM,10,103.273,31.723,27.848,1431.100,289.040,253.734,0.880,0.079,0.069
+launch_note_app,Launch Note App,Launch,RLM,10,248.228,153.305,134.578,12168.200,4273.421,3751.415,0.210,0.318,0.279
+pdf_cersei_warning,PDF Cersei Warning,PDF,LLM,10,111.305,27.517,24.156,4864.200,239.363,210.124,0.000,0.000,0.000
+pdf_cersei_warning,PDF Cersei Warning,PDF,RLM,9,200.657,80.804,74.770,19413.222,7284.645,6740.725,0.000,0.000,0.000
+tsp_branch_bound,Under-specified TSP,TSP-M,LLM,10,102.791,20.558,18.047,1340.700,140.405,123.254,0.100,0.316,0.278
+tsp_branch_bound,Under-specified TSP,TSP-M,RLM,10,514.593,216.737,190.262,24015.800,3713.072,3259.514,0.100,0.316,0.278
+stochastic_tsp,Stochastic Adaptive TSP,TSP-S,LLM,10,123.732,60.571,53.172,1433.100,220.146,193.255,0.250,0.236,0.207
+stochastic_tsp,Stochastic Adaptive TSP,TSP-S,RLM,9,598.444,373.821,345.909,23607.889,6813.483,6304.742,0.000,0.000,0.000

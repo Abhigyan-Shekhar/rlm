@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<rect x="0" y="0" width="1400" height="620" fill="white"/>
+<text x="700.0" y="34" text-anchor="middle" font-size="24" fill="#111827" font-family="Arial">Average Total Tokens by Benchmark</text>
+<text x="700.0" y="602" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial">Benchmark</text>
+<text x="22" y="255.0" text-anchor="middle" font-size="14" fill="#111827" font-family="Arial" transform="rotate(-90 22 255.0)">Tokens</text>
+<line x1="90" y1="440.0" x2="1360" y2="440.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="444.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">0</text>
+<line x1="90" y1="366.0" x2="1360" y2="366.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="370.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">6092</text>
+<line x1="90" y1="292.0" x2="1360" y2="292.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="296.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">12184</text>
+<line x1="90" y1="218.0" x2="1360" y2="218.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="222.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">18276</text>
+<line x1="90" y1="144.0" x2="1360" y2="144.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="148.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">24368</text>
+<line x1="90" y1="70.0" x2="1360" y2="70.0" stroke="#d1d5db" stroke-width="1"/>
+<text x="80" y="74.0" text-anchor="end" font-size="12" fill="#111827" font-family="Arial">30460</text>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#111827" stroke-width="1.5"/>
+<line x1="90" y1="440" x2="1360" y2="440" stroke="#111827" stroke-width="1.5"/>
+<rect x="123.91428571428571" y="436.1906200190088" width="50.800000000000004" height="3.8093799809911832" fill="#2563eb" rx="2"/>
+<rect x="186.71428571428572" y="323.5685359764015" width="50.800000000000004" height="116.43146402359851" fill="#dc2626" rx="2"/>
+<text x="149.31428571428572" y="430.1906200190088" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">313.6</text>
+<text x="212.11428571428573" y="317.5685359764015" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">9585.0</text>
+<text x="180.71428571428572" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 180.71428571428572 458)">Battle of the Bastards</text>
+<rect x="305.34285714285716" y="424.84022252462694" width="50.800000000000004" height="15.159777475373074" fill="#2563eb" rx="2"/>
+<rect x="368.14285714285717" y="282.07836294364165" width="50.800000000000004" height="157.92163705635835" fill="#dc2626" rx="2"/>
+<text x="330.74285714285713" y="418.84022252462694" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">1248.0</text>
+<text x="393.54285714285714" y="276.07836294364165" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">13000.6</text>
+<text x="362.14285714285717" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 362.14285714285717 458)">AuthProxy Long Context</text>
+<rect x="486.77142857142854" y="405.68885620437595" width="50.800000000000004" height="34.31114379562403" fill="#2563eb" rx="2"/>
+<rect x="549.5714285714286" y="287.904187684979" width="50.800000000000004" height="152.09581231502105" fill="#dc2626" rx="2"/>
+<text x="512.1714285714286" y="399.68885620437595" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">2824.6</text>
+<text x="574.9714285714285" y="281.904187684979" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">12521.0</text>
+<text x="543.5714285714286" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 543.5714285714286 458)">Clinical Long Context</text>
+<rect x="668.1999999999999" y="424.1891295176718" width="50.800000000000004" height="15.810870482328202" fill="#2563eb" rx="2"/>
+<rect x="730.9999999999999" y="280.7373057054356" width="50.800000000000004" height="159.26269429456443" fill="#dc2626" rx="2"/>
+<text x="693.5999999999999" y="418.1891295176718" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">1301.6</text>
+<text x="756.3999999999999" y="274.7373057054356" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">13111.0</text>
+<text x="724.9999999999999" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 724.9999999999999 458)">Launch Note App</text>
+<rect x="849.6285714285714" y="379.1616750739916" width="50.800000000000004" height="60.83832492600842" fill="#2563eb" rx="2"/>
+<rect x="912.4285714285713" y="192.24453414446373" width="50.800000000000004" height="247.75546585553627" fill="#dc2626" rx="2"/>
+<text x="875.0285714285714" y="373.1616750739916" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">5008.4</text>
+<text x="937.8285714285713" y="186.24453414446373" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">20396.0</text>
+<text x="906.4285714285713" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 906.4285714285713 458)">PDF Cersei Warning</text>
+<rect x="1031.057142857143" y="423.9097425930455" width="50.800000000000004" height="16.090257406954468" fill="#2563eb" rx="2"/>
+<rect x="1093.857142857143" y="154.354808262105" width="50.800000000000004" height="285.645191737895" fill="#dc2626" rx="2"/>
+<text x="1056.457142857143" y="417.9097425930455" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">1324.6</text>
+<text x="1119.257142857143" y="148.354808262105" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">23515.2</text>
+<text x="1087.857142857143" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 1087.857142857143 458)">Under-specified TSP</text>
+<rect x="1212.4857142857143" y="423.350968743793" width="50.800000000000004" height="16.649031256207" fill="#2563eb" rx="2"/>
+<rect x="1275.2857142857142" y="103.63636363636368" width="50.800000000000004" height="336.3636363636363" fill="#dc2626" rx="2"/>
+<text x="1237.8857142857144" y="417.350968743793" text-anchor="middle" font-size="10" fill="#2563eb" font-family="Arial">1370.6</text>
+<text x="1300.6857142857143" y="97.63636363636368" text-anchor="middle" font-size="10" fill="#dc2626" font-family="Arial">27690.5</text>
+<text x="1269.2857142857142" y="458" text-anchor="end" font-size="11" fill="#111827" font-family="Arial" transform="rotate(-35 1269.2857142857142 458)">Stochastic Adaptive TSP</text>
+<rect x="1200" y="50" width="14" height="14" fill="#2563eb"/>
+<text x="1222" y="62" font-size="12" fill="#111827" font-family="Arial">LLM</text>
+<rect x="1280" y="50" width="14" height="14" fill="#dc2626"/>
+<text x="1302" y="62" font-size="12" fill="#111827" font-family="Arial">RLM</text>
+</svg>

@@ -1,0 +1,39 @@
+# Benchmark Run Summary
+
+| Pair | Run | LLM Exit | RLM Exit | LLM Log | RLM Log |
+| --- | --- | --- | --- | --- | --- |
+| got | 001 | 0 | 0 | [llm](got/run_001_llm.md) | [rlm](got/run_001_rlm.md) |
+| got | 002 | 0 | 0 | [llm](got/run_002_llm.md) | [rlm](got/run_002_rlm.md) |
+| got | 003 | 0 | 0 | [llm](got/run_003_llm.md) | [rlm](got/run_003_rlm.md) |
+| got | 004 | 0 | 0 | [llm](got/run_004_llm.md) | [rlm](got/run_004_rlm.md) |
+| got | 005 | 0 | 0 | [llm](got/run_005_llm.md) | [rlm](got/run_005_rlm.md) |
+| authproxy | 001 | 0 | 0 | [llm](authproxy/run_001_llm.md) | [rlm](authproxy/run_001_rlm.md) |
+| authproxy | 002 | 0 | 0 | [llm](authproxy/run_002_llm.md) | [rlm](authproxy/run_002_rlm.md) |
+| authproxy | 003 | 0 | 0 | [llm](authproxy/run_003_llm.md) | [rlm](authproxy/run_003_rlm.md) |
+| authproxy | 004 | 0 | 0 | [llm](authproxy/run_004_llm.md) | [rlm](authproxy/run_004_rlm.md) |
+| authproxy | 005 | 0 | 0 | [llm](authproxy/run_005_llm.md) | [rlm](authproxy/run_005_rlm.md) |
+| clinical | 001 | 0 | 0 | [llm](clinical/run_001_llm.md) | [rlm](clinical/run_001_rlm.md) |
+| clinical | 002 | 0 | 0 | [llm](clinical/run_002_llm.md) | [rlm](clinical/run_002_rlm.md) |
+| clinical | 003 | 0 | 0 | [llm](clinical/run_003_llm.md) | [rlm](clinical/run_003_rlm.md) |
+| clinical | 004 | 0 | 0 | [llm](clinical/run_004_llm.md) | [rlm](clinical/run_004_rlm.md) |
+| clinical | 005 | 0 | 0 | [llm](clinical/run_005_llm.md) | [rlm](clinical/run_005_rlm.md) |
+| launch_note_app | 001 | 0 | 0 | [llm](launch_note_app/run_001_llm.md) | [rlm](launch_note_app/run_001_rlm.md) |
+| launch_note_app | 002 | 0 | 0 | [llm](launch_note_app/run_002_llm.md) | [rlm](launch_note_app/run_002_rlm.md) |
+| launch_note_app | 003 | 0 | 0 | [llm](launch_note_app/run_003_llm.md) | [rlm](launch_note_app/run_003_rlm.md) |
+| launch_note_app | 004 | 0 | 0 | [llm](launch_note_app/run_004_llm.md) | [rlm](launch_note_app/run_004_rlm.md) |
+| launch_note_app | 005 | 0 | 0 | [llm](launch_note_app/run_005_llm.md) | [rlm](launch_note_app/run_005_rlm.md) |
+| pdf_cersei_warning | 001 | 0 | -9 | [llm](pdf_cersei_warning/run_001_llm.md) | [rlm](pdf_cersei_warning/run_001_rlm.md) |
+| pdf_cersei_warning | 002 | 0 | 0 | [llm](pdf_cersei_warning/run_002_llm.md) | [rlm](pdf_cersei_warning/run_002_rlm.md) |
+| pdf_cersei_warning | 003 | 0 | 0 | [llm](pdf_cersei_warning/run_003_llm.md) | [rlm](pdf_cersei_warning/run_003_rlm.md) |
+| pdf_cersei_warning | 004 | 0 | 0 | [llm](pdf_cersei_warning/run_004_llm.md) | [rlm](pdf_cersei_warning/run_004_rlm.md) |
+| pdf_cersei_warning | 005 | 0 | 0 | [llm](pdf_cersei_warning/run_005_llm.md) | [rlm](pdf_cersei_warning/run_005_rlm.md) |
+| tsp_branch_bound | 001 | 0 | 0 | [llm](tsp_branch_bound/run_001_llm.md) | [rlm](tsp_branch_bound/run_001_rlm.md) |
+| tsp_branch_bound | 002 | 0 | 0 | [llm](tsp_branch_bound/run_002_llm.md) | [rlm](tsp_branch_bound/run_002_rlm.md) |
+| tsp_branch_bound | 003 | 0 | 0 | [llm](tsp_branch_bound/run_003_llm.md) | [rlm](tsp_branch_bound/run_003_rlm.md) |
+| tsp_branch_bound | 004 | 0 | 0 | [llm](tsp_branch_bound/run_004_llm.md) | [rlm](tsp_branch_bound/run_004_rlm.md) |
+| tsp_branch_bound | 005 | 0 | 0 | [llm](tsp_branch_bound/run_005_llm.md) | [rlm](tsp_branch_bound/run_005_rlm.md) |
+| stochastic_tsp | 001 | 0 | 0 | [llm](stochastic_tsp/run_001_llm.md) | [rlm](stochastic_tsp/run_001_rlm.md) |
+| stochastic_tsp | 002 | 0 | 0 | [llm](stochastic_tsp/run_002_llm.md) | [rlm](stochastic_tsp/run_002_rlm.md) |
+| stochastic_tsp | 003 | 0 | 0 | [llm](stochastic_tsp/run_003_llm.md) | [rlm](stochastic_tsp/run_003_rlm.md) |
+| stochastic_tsp | 004 | 0 | 0 | [llm](stochastic_tsp/run_004_llm.md) | [rlm](stochastic_tsp/run_004_rlm.md) |
+| stochastic_tsp | 005 | 0 | 0 | [llm](stochastic_tsp/run_005_llm.md) | [rlm](stochastic_tsp/run_005_rlm.md) |
