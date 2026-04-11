@@ -213,3 +213,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Generated benchmark and manuscript artifacts
+*.aux
+*.out
+missfont.log
+/RLM_Setup_And_Test_Guide.pdf
+/llm_vs_rlm_benchmark_ieee_local_ollama.pdf
+/llm_vs_rlm_benchmark_ieee_ollama_plus_gemini.pdf
+/llm_vs_rlm_local_ollama_research_paper.pdf
+/local_ollama_benchmark_paper_update.pdf
+/paper_ieee_conference_revised.pdf
